@@ -3,7 +3,7 @@
     width: 100vw;
     height: min(82.001vh, 45.556vw);
     margin-top: min(10.001vh, 5.556vw);
-    background-image: url("../sec2/assets/Mockup-Section.png");
+    /* background-image: url("../sec2/assets/Mockup-Section.png"); */
     background-position: center;
     background-size: contain;
     .center-container {

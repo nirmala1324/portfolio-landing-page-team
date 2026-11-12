@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
   font-family: var(--font-lexend-deca), sans-serif;
 }
 
@@ -75,6 +77,125 @@ img {
           transition: background-color .3s ease;
           &:hover {
             background-color: rgba(84, 104, 231, 0.8);
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-container {
+  width: 100vw;
+  overflow-x: hidden;
+  background-image: url("../public/common/Footer.png");
+  background-position: center;
+  background-size: contain;
+
+  .content-pc {
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    height: min(62.5vh, 34.722vw);
+    background-color: #232340;
+
+    .service-header {
+      color: #5468E7;
+      font-size: min(3.001vh, 1.667vw);
+      line-height: 1;
+      margin-bottom: min(0.54vh, 0.3vw);
+    }
+
+    .text {
+      color: #F5F5F5;
+      font-size: min(1.75vh, 0.972vw);
+      line-height: 1.58;
+      transition: all .3s ease;
+      letter-spacing: min(0.022vh, 0.012vw);
+    }
+    
+    .center-container {
+      margin-top: min(9.18vh, 5.1vw);
+      width: min(145.125vh, 80.625vw);
+      display: flex;
+      justify-content: space-between;
+
+      .main-part {
+        display: flex;
+        flex-direction: column;
+        gap: min(31.86vh, 17.7vw);
+
+        .upper-part {
+          display: flex;
+          flex-direction: column;
+          max-width: min(21.001vh, 11.667vw);
+          gap: min(1.62vh, 0.9vw);
+
+          .logo {
+            width: min(17.249vh, 9.583vw);
+            height: min(6.5vh, 3.611vw);
+          }
+        }
+      }
+
+      .services-part {
+        display: flex;
+        justify-self: end;
+        margin-top: min(3.114vh, 1.73vw);
+        gap: min(7.65vh, 4.25vw);
+
+        a {
+          text-decoration: none;
+        }
+
+        .text {
+          cursor: pointer;
+          line-height: 1.3;
+          &:hover {
+            color: #7676B2
+          }
+        }
+        
+        .service-list {
+          display: flex;
+          flex-direction: column;
+          gap: min(2vh, 1.111vw);
+
+          &.part-1 {
+            margin-right: min(3.06vh, 1.7vw);
+          }
+          
+          &.part-3 {
+            max-width: min(17.46vh, 9.7vw);
+            .text:nth-child(3) {
+              line-height: 1.55;
+            }
+          }
+        }
+        
+        .email-button {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: min(33.5vh, 18.611vw);
+          height: min(5.749vh, 3.194vw);
+          border-radius: min(0.5vh, 0.278vw);
+          background-color: rgba(245, 245, 245, 0.24);
+          padding-inline: min(2vh, 1.111vw);
+          cursor: pointer;
+          transition: all .3s ease;
+          box-sizing: border-box;
+
+          &:hover {
+            background-color: rgba(245, 245, 245, 0.2);;
+          }
+
+          .text:hover {
+            color: #F5F5F5;
+          }
+
+          .right-arrow {
+            width: min(1.948vh, 1.082vw);
+            height: min(1.897vh, 1.054vw);
           }
         }
       }

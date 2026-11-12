@@ -4,8 +4,9 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./global.css"
 import {siteConfig} from "@/lib/seo";
-import {SmoothScroll} from "@/components/animations/SmoothScroll";
+import {SmoothScroll} from "@/components/common/animations/SmoothScroll";
 import HeaderLayout from "@/components/HeaderLayout";
+import FooterLayout from "@/components/FooterLayout";
 
 const lexendDeca = Lexend_Deca({
     variable: "--font-lexend-deca",
@@ -58,6 +59,7 @@ export default function RootLayout({children}: LayoutProps<"/">) {
                 <SmoothScroll>
                     <HeaderLayout/>
                     {children}
+                    <FooterLayout/>
                 </SmoothScroll>
                 <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!}/>
             </body>

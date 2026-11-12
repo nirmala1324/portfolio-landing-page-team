@@ -3,7 +3,7 @@ import Sec2 from "@/components/homepage/sec2/Sec2";
 
 export default function Homepage() {
   return (
-    <div className='parent-container'>
+    <div className='parent-container team-landing-page'>
         <Sec1/>
         <Sec2/>
     </div>

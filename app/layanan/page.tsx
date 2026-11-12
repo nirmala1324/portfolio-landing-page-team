@@ -1,5 +1,5 @@
 import {Metadata} from "next";
-import {Reveal} from "@/components/animations/Reveal";
+import {Reveal} from "@/components/common/animations/Reveal";
 
 export const metadata:Metadata = {
     title: "Layanan Kami",
